@@ -3,7 +3,10 @@ const frm=document.querySelector("form");
 const resp=document.querySelector("h3");
 //Cria um "ouvinte" de evento,acionado quando o botao submit for clicado
 frm.addEventListener("submit",(e)=>{
-    const nome = document.getElementById("inNome").value;   //Obtem o nome digitado no form
-    resp.innerHTML=`Olá, ${nome}!`; //Exibe resposta do programa
-    e.preventDefault()  //evita envio do form
+    //Obtem o nome digitado no form
+    const nome = document.getElementById("inNome").value;   
+    //Exibe resposta do programa
+    resp.innerHTML=`Olá, ${nome}!`; 
+    //evita envio do form
+    e.preventDefault()  
 })
